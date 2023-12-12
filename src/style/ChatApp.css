@@ -1,0 +1,61 @@
+/* src/ChatApp.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  .ChatApp {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* .ChatWindow .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .ChatWindow .user {
+    background-color: #009688;
+    color: #fff;
+    text-align: right;
+  }
+  
+  .ChatWindow .bot {
+    background-color: #ddd;
+    color: #333;
+    text-align: left;
+  }
+  
+  .ChatWindow input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 5px;
+  }
+  
+  .ChatWindow button {
+    padding: 8px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ChatWindow button:hover {
+    background-color: #00796b;
+  } */
+  

@@ -1,0 +1,76 @@
+
+.ChatWindow {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ChatWindow .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .ChatWindow .user {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: right;
+  }
+  
+  .ChatWindow .bot {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: left;
+  }
+  
+  .ChatWindow input {
+    width: 80%;
+    padding: 8px;
+    margin-right: 5px;
+  }
+  
+  .ChatWindow button {
+    padding: 10px 31px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ChatWindow button:hover {
+    background-color: #0d8bf2;
+  }
+
+  .responseBox{
+    height: 70vh;
+    overflow-y: scroll;
+  }
+  .userInputBox{
+    padding-top: 12px;
+  }
+/* To hide the scroll bar */
+  ::-webkit-scrollbar {
+    display: none;
+}
+
+/* src/ChatWindow.css */
+/* ... (existing styles) */
+
+.ChatWindow .user-message {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ChatWindow .user-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  
+  
