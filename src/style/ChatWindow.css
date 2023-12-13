@@ -35,7 +35,7 @@
   
   .ChatWindow button {
     padding: 10px 31px;
-    background-color: #2196f3;
+    background-color: #00ABB3;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -43,7 +43,7 @@
   }
   
   .ChatWindow button:hover {
-    background-color: #0d8bf2;
+    background-color: #00ABB3;
   }
 
   .responseBox{
@@ -71,6 +71,7 @@
     height: 20px;
     margin-right: 10px;
   }
+
   
   
   

@@ -21,6 +21,10 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+
+  /* .chatConatiner{
+    background-color: #000000;
+  } */
   
   /* .ChatWindow .message {
     padding: 10px;
@@ -58,4 +62,35 @@ body {
   .ChatWindow button:hover {
     background-color: #00796b;
   } */
-  
+
+  .logOut{
+    text-align: end;
+  }
+
+  .logOutBtn{
+    margin: 10px 10px 0px 0px;
+    padding: 5px 30px;
+    background-color: #00ABB3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .welcomeLine{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+  }
+  .chatTagLine{
+    font-size: small;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+  }
+  /* .welcomeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */

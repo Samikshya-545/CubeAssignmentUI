@@ -1,0 +1,52 @@
+.signInContainer{
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.signInTab{
+    height: 25%;
+    width: 30%;
+    display: flex;
+    background-color: #3C4048;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px;
+    border-radius: 5px;
+}
+
+.heading{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.tagLine{
+    font-size: x-small;
+    font-weight: bold;
+    color: white;
+}
+
+.btn {
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 150px;
+    min-height: 40px;
+    /* box-shadow: 0 0 2px rgb(241, 245, 245); */
+    box-shadow: 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.googleLogoContainer{
+    height: 15px;
+    width: 15px;
+    padding-right: 5px;
+}

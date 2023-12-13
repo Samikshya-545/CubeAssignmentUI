@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { googleLogout, useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios';
+import '../style/Sign-in.css';
+import googleLogo from '../images/google_logo.png';
+import { useNavigate } from 'react-router-dom';
+
 
 function SignIn() {
     const [ user, setUser ] = useState([]);
     const [ profile, setProfile ] = useState([]);
+    const navigate = useNavigate();
 
     const login = useGoogleLogin({
         onSuccess: (codeResponse) => setUser(codeResponse),
@@ -21,7 +26,14 @@ function SignIn() {
                             Accept: 'application/json'
                         }
                     })
-                    .then((res) => {setProfile(res.data);
+                    .then((res) => {
+                        setProfile(profile);
+                        console.log('res',res.data);
+                        const authID = res.data.id;
+                        console.log("authID",authID)
+                        localStorage.setItem('authenticationToken',JSON.stringify(res.data));
+                        navigate('/chat');
+                        window.location.reload();
                     })
                     .catch((err) => console.log(err));
             }
@@ -36,23 +48,21 @@ function SignIn() {
     };
 
     return (
-        <div>
-            <h2>React Google Login</h2>
-            <br />
-            <br />
-            {profile == null ? (
-                <div>
-                    <img src={profile.picture} alt="user image" />
-                    <h3>User Logged in</h3>
-                    <p>Name: {profile.name}</p>
-                    <p>Email Address: {profile.email}</p>
-                    <br />
-                    <br />
-                    <button onClick={logOut}>Log out</button>
-                </div>
-            ) : (
-                <button onClick={() => login()}>Sign in with Google 🚀 </button>
-            )}
+        <div className='signInContainer'>
+            <div className='signInTab'>
+                <div className='heading'>Welcome To BotTalker</div>
+                <div className='tagLine'>Where Chat Meets Intelligence</div>
+                <br />
+                <br />
+                {profile == null ? (
+                    <div>
+                    </div>
+                ) : (
+                    <button className='btn' onClick={() => login()}>
+                        <img className='googleLogoContainer' src={googleLogo} alt='Google Logo'/>
+                        SignIn With Google 🚀 </button>
+                )}
+            </div>
         </div>
     );
 }
